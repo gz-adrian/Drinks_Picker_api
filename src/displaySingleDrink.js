@@ -13,11 +13,17 @@ const displayDrink = (data) => {
   const { strDrinkThumb: image, strDrink: name, strInstructions: desc } = drink;
 
   const list = [
-    drink.strIngredients1,
-    drink.strIngredients2,
-    drink.strIngredients3,
-    drink.strIngredients4,
-    drink.strIngredients5,
+    drink.strIngredient1,
+    drink.strIngredient2,
+    drink.strIngredient3,
+    drink.strIngredient4,
+    drink.strIngredient5,
+    drink.strIngredient6,
+    drink.strIngredient7,
+    drink.strIngredient8,
+    drink.strIngredient9,
+    drink.strIngredient10,
+    drink.strIngredient11,
   ];
 
   const img = get(".drink-img");
@@ -31,11 +37,11 @@ const displayDrink = (data) => {
   ingredients.innerHTML = list
     .map((item) => {
       if (!item) return;
-      return `<li>${item}</li>`;
-      // return `<li><i class="far fa-check-square"></i>${item}</li>`;
+      // return `<li>${item}</li>`;
+      return `<li><i class="far fa-check-square"></i>${item}</li>`;
     })
     .join("");
-  // console.log(drink, list);
+  console.log(drink, list);
 };
 
 export default displayDrink;
