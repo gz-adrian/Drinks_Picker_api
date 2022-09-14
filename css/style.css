@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* Fonts  */
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
@@ -199,6 +200,7 @@ input {
 input {
   border-radius: var(--radius);
 }
+
 input::placeholder {
   text-transform: capitalize;
   color: var(--clr-grey-3);
